@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.css"
+  />
+  <link
+    rel="stylesheet"
+    href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+  />
+  <script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+  <link rel="Site icon" type="png" href="Assets/IMG/Logo/Logo sans fond.png" />
+  <link rel="stylesheet" href="Assets/reservation.css">
+  <title>HOTEL LOTUS</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"> <img class="logo" height="50px" src="Assets/IMG/Logo/Logo sans fond.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Acceuil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about/about.html">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Chambre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservation.html">Réservation</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="restaurant/restaurant.html">Restaurant</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bungalows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Rechercher</button>
+            </form>
+        </div>
+      </div>
+    </nav>
+
+    <section id="reservation" class="py-5" img >
+        <div class="container" >
+            <h2 class="text-center mb-4">Réservez une Chambre</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="checkin">Date d'arrivée</label>
+                                <input type="date" class="form-control" id="checkin" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="checkout">Date de départ</label>
+                                <input type="date" class="form-control" id="checkout" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="roomType">Type de chambre</label>
+                                <select class="form-control" id="roomType" required>
+                                    <option>Chambre Simple</option>
+                                    <option>Chambre Double</option>
+                                    <option>Suite</option>
+                                    <option>Suite Présidentielle</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="guests">Nombre de personnes</label>
+                                <input type="number" class="form-control" id="guests" min="1" max="10" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferences">Préférences de chambre</label>
+                            <input type="text" class="form-control" id="preferences" placeholder="Ex: Vue sur la piscine, étage élevé">
+                        </div>
+                        <div class="form-group">
+                            <label for="specialRequests">Demandes spéciales</label>
+                            <textarea class="form-control" id="specialRequests" rows="3" placeholder="Ex: Allergies alimentaires, accès handicapé"></textarea>
+                        </div>
+                        <h4 class="mt-4">Informations de contact</h4>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="firstName">Prénom</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="lastName">Nom</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Réserver</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+
+</body>
+</html>
